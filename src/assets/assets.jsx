@@ -81,21 +81,21 @@ export const albumsData = [
     },
     {   
         id:1,
-        name: "Top 50 Gospel",
+        name: "Gospel Hit",
         image: dunsin_oyekan_album,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#22543d"
     },
     {   
         id:2,
-        name: "Top 50 Gospel",
+        name: "Top 20 Gospel",
         image: mercy_chinwo_album,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#742a2a"
     },
     {   
         id:3,
-        name: "Trending Global Gospel",
+        name: "Trending Gospel",
         image: sinach_album,
         desc:"Your weekly update of the most played tracks",
         bgColor:"#44337a"

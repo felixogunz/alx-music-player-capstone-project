@@ -1,15 +1,19 @@
-import React from 'react'
-import Sidebar from './components/Sidebar'
+import React from 'react';
+import Sidebar from './components/Sidebar';
+import Player from './components/Player';
+import Display from './components/Display'
 
 const App = () => {
   return (
-    /*<div className='h-screen bg-black'>*/
-    <div className="w-screen h-screen bg-black flex items-center justify-center">
-      <div className='h-[90%] flex'>
+    <div className="w-screen h-screen bg-gray-800 flex flex-col">
+      <div className="h-[90%] flex">
         <Sidebar />
+        <Display />
       </div>
+      <Player /> {/* This will be pushed to the bottom */ }
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
+
