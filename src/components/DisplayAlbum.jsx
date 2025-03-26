@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';  // Import useContext here
 import NavBar from './NavBar';
 import { useParams } from 'react-router-dom';
 import { albumsData, songsData } from '../assets/assets';
 import { assets } from '../assets/assets';
+import { PlayerContext } from '../context/PlayerContext';
 
 const DisplayAlbum = () => {
   const { id } = useParams();
   const albumData = albumsData[id];
+  const { playWithId } = useContext(PlayerContext);  // Use context here
 
   return (
     <>
@@ -42,6 +44,7 @@ const DisplayAlbum = () => {
         .sort((a, b) => a.index - b.index) // Ensure songs are sorted in ascending order based on index
         .map((item, index) => (
           <div
+            onClick={() => playWithId(item.id)} // Calling playWithId function from context
             key={index}
             className="grid grid-cols-3 sm:grid-cols-4 gap-2 p-2 items-center text-[#a7a7a7] hover:bg-[#ffffff2b] cursor-pointer"
           >
@@ -50,6 +53,9 @@ const DisplayAlbum = () => {
               <img className="inline w-10 mr-5" src={item.image} alt="" />
               {item.name}
             </p>
+            <p className="text-[15px]">{albumData.name}</p>
+            <p className="text-[15px] hidden sm:block">1 Week ago</p>
+            <p className="text-[15px] text-center">{item.duration}</p>
           </div>
         ))}
     </>
@@ -57,3 +63,5 @@ const DisplayAlbum = () => {
 };
 
 export default DisplayAlbum;
+
+

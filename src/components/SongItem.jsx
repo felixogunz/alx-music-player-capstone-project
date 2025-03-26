@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { PlayerContext } from '../context/PlayerContext';
 
 const SongItem = ({ name, desc, id, image }) => {
+
+  const { playWithId } = useContext(PlayerContext);
+
   return (
-    <div className="album-item flex-shrink-0">
+    <div  onClick={() => playWithId(id)} className="album-item flex-shrink-0">
       <div className="w-48 h-48">
         <img
           src={image}

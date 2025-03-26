@@ -2,11 +2,14 @@ import React from 'react';
 import { assets } from '../assets/assets';
 
 const Sidebar = () => {
+
+   const navigate = useNavigate();
+
   return (
     <div className='w-[20%] h-screen p-4 flex flex-col gap-4 text-white bg-gray-950 fixed top-0 left-0 lg:flex z-10'>
       {/* Home & Search Section */}
       <div className='rounded flex flex-col gap-4'>
-        <div className='flex items-center gap-3 p-3 cursor-pointer hover:bg-[#242424] rounded'>
+        <div onClick={()=>navigate('/')} className='flex items-center gap-3 p-3 cursor-pointer hover:bg-[#242424] rounded'>
           <img className='w-6' src={assets.home_icon} alt='Home' />
           <p className='font-bold text-sm'>Home</p>
         </div>

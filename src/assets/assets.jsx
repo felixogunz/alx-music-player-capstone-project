@@ -130,7 +130,7 @@ export const songsData = [
         name: "Ogo",
         image: dunsin_image_1,
         file:dunsin_song_1,
-        desc:"Hallelujah to the lion and the lamb",
+        desc:"Glorify jesus with this song",
         duration:"10:53"
     },
     {
@@ -138,7 +138,7 @@ export const songsData = [
         name: "Regular",
         image: mercy_image_1,
         file:mercy_song_1,
-        desc:"Your blessings are regular in my life",
+        desc:"Glorify jesus with this song",
         duration:"3:58"
     },
     {
@@ -146,7 +146,7 @@ export const songsData = [
         name: "Iba",
         image: chill_beats,
         file:nathaniel_song_2,
-        desc:"Meditate and be filled with the hly spirit",
+        desc:"Glorify jesus with this song",
         duration:"10:25"
     },
     {
@@ -154,7 +154,7 @@ export const songsData = [
         name: "Worthy of my Praise",
         image: dunsin_image_1,
         file:dunsin_song_2,
-        desc:"Put a smile on your face with these happy tunes",
+        desc:"Glorify jesus with this song",
         duration:"13:28"
     },
     {
@@ -162,7 +162,7 @@ export const songsData = [
         name: "Amazing God",
         image: happy_pic,
         file:mercy_song_2,
-        desc:"Worship the amazing God",
+        desc:"Glorify jesus with this song",
         duration:"4:56"
     },
     {
@@ -170,7 +170,7 @@ export const songsData = [
         name: "Ebenezer",
         image: nathaniel_image_1,
         file:nathaniel_song_3,
-        desc:"Give praise to the stone of help",
+        desc:"Glorify jesus with this song",
         duration:"8:31"
     },
     {
@@ -178,7 +178,7 @@ export const songsData = [
         name: "Fragrance to fire",
         image: dunsin_image_1,
         file:dunsin_song_3,
-        desc:"The fragrance of fire is a sweet smell",
+        desc:"Glorify jesus with this song",
         duration:"10:57"
     }
 ]
